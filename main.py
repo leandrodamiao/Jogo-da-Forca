@@ -2,10 +2,12 @@ from lib import enforcado
 from random import choice
 from time import sleep
 
-
 lista = ('PATO', 'CAHORRO', 'GALINHA', 'CODORNA', 'GATO', 'MESA', 'CARRO', 'BICICLETE', 'ONIBUS', 'COZINHA', 'SALA', 'ALMOFADA', 'ESCOLA', 'LIVRO', 'CELULAR', 'ANDARILHO', 'COCHILAR', 'ESCOVAR', 'DIRIGIR', 'COZINHAR', 'COMPRAR', 'MERGULHAR', 'ESCALAR', 'PINTAR', 'ESCULPIR', 'FAZER', 'ARMARIO', 'VENTILADOR', 'TEMPO', 'PORTA', 'PORTAO', 'PEIXE', 'BANANA', 'ABACATE', 'COSTELA', 'BIFE', 'ALMONDEGA', 'COMPANHIA', 'CARTAO', 'CARTA', 'BOLSA', 'SAPATO', 'LUVA', 'CAMISA', 'BOTAO', 'BOTA', 'CASACO')
 jogando = True
 while jogando:
+  print('\033[34m-\033[m'*25)
+  print('\033[34m|', '    JOGO DA FORCA    ', '|\033[m')
+  print('\033[34m-\033[m'*25)
   palavra = choice(lista)
   erro = 0
   acerto = list('_' *len(palavra))
@@ -50,3 +52,4 @@ while jogando:
       break
     else:
       print('Opção inválida')
+      
